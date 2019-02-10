@@ -17,16 +17,16 @@
     <div class="center col-md-6">
       <h2 class="title">Entrar</h2>
 
-      <form>
+      <form method="POST" action="app/utils/login.php">
 
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com">
+          <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com" required>
         </div>
 
         <div class="form-group">
           <label for="password">Senha:</label>
-          <input type="password" name="password" id="password" placeholder="Senha" class="form-control">
+          <input type="password" name="password" id="password" placeholder="Senha" class="form-control" required>
         </div>
         <div class="form-group">
           <a href="#" class="text-right">Ainda não tem conta? Cadastre-se</a>
