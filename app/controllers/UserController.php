@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\dao\UserDAO;
+use app\utils\classes\Response;
 
 session_start();
 
@@ -20,7 +21,7 @@ class UserController
         $user = $this->dao->auth($user);
 
         if ($user->getEmail() == null) {
-            echo "E-mail ou senha inválidos";
+            Response::response200("E-mail ou senha inválidos");
             return;
         }
 
