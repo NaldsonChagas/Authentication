@@ -17,7 +17,7 @@
     <div class="center col-md-6">
       <h2 class="title">Entrar</h2>
 
-      <form method="POST" action="login.php">
+      <form>
 
         <div class="form-group">
           <label for="email">E-mail</label>
@@ -37,6 +37,7 @@
       </form>
     </div>
   </div>
+  <script src="dist/main.js"></script>
 </body>
 
 </html>
