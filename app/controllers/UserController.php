@@ -26,13 +26,20 @@ class UserController
         }
 
         $_SESSION['logged_user'] = $user->getName();
+        header("Location: welcome.php");
 
     }
 
-    public function logout() 
+    public function logout()
     {
         session_destroy();
-        header("Location: index.html");
+        header("Location: index.php");
     }
 
+    public function isUserLogged()
+    {
+        if (!isset($_SESSION["logged_user"])) {
+            header("Location: index.php");
+        }
+    }
 }

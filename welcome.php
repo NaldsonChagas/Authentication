@@ -1,3 +1,12 @@
+<?php
+  require_once "app/utils/autoload_class.php";
+
+  use app\controllers\UserController;
+
+  $controller = new UserController();
+  $controller->isUserLogged();
+?>
+
 <!DOCTYPE html>
 <html>
 
