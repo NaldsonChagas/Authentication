@@ -11,5 +11,3 @@ $password = $_POST['password'];
 $user = new User($email, $password);
 $userController = new UserController();
 $userController->auth($user);
-
-Response::loggedUserInfo();
