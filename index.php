@@ -17,7 +17,7 @@
     <div class="center col-md-6">
       <h2 class="title">Entrar</h2>
 
-      <form>
+      <form id="login-form">
 
         <div class="form-group">
           <label for="email">E-mail</label>

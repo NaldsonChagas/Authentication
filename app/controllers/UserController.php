@@ -26,8 +26,6 @@ class UserController
         }
 
         $_SESSION['logged_user'] = $user->getName();
-        header("Location: welcome.php");
-
     }
 
     public function logout()

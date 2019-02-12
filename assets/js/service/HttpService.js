@@ -16,7 +16,10 @@ export class HttpService {
         }
       }
 
-      if (params) xhr.send(params);
+      if (params) {
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(params);
+      }
       else xhr.send();
     });
   }
