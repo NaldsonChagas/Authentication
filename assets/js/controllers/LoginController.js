@@ -18,7 +18,9 @@ export class LoginController {
       event.preventDefault();
 
       this._userService.login(this._getParams())
-        .then(response => console.log(response), err => console.log(err));
+        .then(response => {
+          window.location.href = 'welcome.php';
+        }, err => console.log(err));
     });
   }
 
