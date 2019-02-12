@@ -1,8 +1,13 @@
 import { LoginController } from "./controllers/LoginController";
 import { WelcomeController } from "./controllers/WelcomeController";
 
-const loginController = new LoginController();
-loginController.login();
 
-const controller = new WelcomeController();
-controller.getLoggedUser();
+switch (document.URL) {
+  case 'http://localhost/register-and-login/welcome.php':
+    const controller = new WelcomeController();
+    controller.getLoggedUser();
+    break;
+  default:
+    const loginController = new LoginController();
+    loginController.login();
+}
