@@ -5,8 +5,8 @@ namespace app\utils\classes;
 class Response
 {
 
-    public static function response200($message) {
-        http_response_code(200);
+    public static function response401($message) {
+        http_response_code(401);
         echo $message;
     }
 

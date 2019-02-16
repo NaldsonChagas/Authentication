@@ -21,7 +21,7 @@ class UserController
         $user = $this->dao->auth($user);
 
         if ($user->getEmail() == null) {
-            Response::response200("E-mail ou senha inválidos");
+            Response::response401("E-mail ou senha inválidos");
             return;
         }
 
