@@ -31,13 +31,13 @@ class UserController
     public function logout()
     {
         session_destroy();
-        header("Location: index.php");
+        header("Location: index.html");
     }
 
     public function isUserLogged()
     {
         if (!isset($_SESSION["logged_user"])) {
-            header("Location: index.php");
+            header("Location: index.html");
         }
     }
 }
